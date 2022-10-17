@@ -25,7 +25,7 @@ class BetterPlayerSubtitle {
       }
       return BetterPlayerSubtitle._();
     } catch (exception) {
-      BetterPlayerUtils.log("Failed to parse subtitle line: $value");
+      BetterPlayerUtils.log("RK 1 Failed to parse subtitle line: $value");
       return BetterPlayerSubtitle._();
     }
   }
@@ -40,7 +40,7 @@ class BetterPlayerSubtitle {
       return BetterPlayerSubtitle._(
           index: -1, start: start, end: end, texts: texts);
     } catch (exception) {
-      BetterPlayerUtils.log("Failed to parse subtitle line: $scanner");
+      BetterPlayerUtils.log("RK 2 Failed to parse subtitle line: $scanner");
       return BetterPlayerSubtitle._();
     }
   }
